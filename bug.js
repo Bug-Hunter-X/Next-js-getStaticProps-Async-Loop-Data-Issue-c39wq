@@ -1,0 +1,1 @@
+In Next.js, a subtle issue can arise when using `getStaticProps` or `getStaticPaths` with data fetching that depends on asynchronous operations within a loop.  If the asynchronous operations aren't properly handled, the promises might not resolve before the function completes, leading to incomplete or stale data being passed to the page.
